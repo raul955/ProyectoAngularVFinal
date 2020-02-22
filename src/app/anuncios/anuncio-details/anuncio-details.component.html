@@ -1,0 +1,26 @@
+<!--Este html corresponde al card de la sección de gestión de anuncios y se implementa en anuncios-list.component.html-->
+<div *ngIf="anuncio">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow" style="width: 170%;">
+                    <div class="card-header">
+                        <b>Key: </b> {{anuncio.key}}
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Título: </b> {{anuncio.titulo}}</li>
+                        <li class="list-group-item"><b>Precio: </b> {{anuncio.precio}}</li>
+                        <li class="list-group-item"><b>Activo: </b> {{anuncio.active}}</li>
+                        <li class="list-group-item" style="margin-left: 25%;">
+                            <button class="btn btn-primary" *ngIf='anuncio.active' (click)='updateActive(false)'>Inactivo</button>
+
+                            <button class="btn btn-primary" *ngIf='!anuncio.active' (click)='updateActive(true)'>Activo</button>
+
+                            <button class="btn btn-danger" (click)='deleteAnuncio()'>Borrar</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

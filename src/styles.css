@@ -1,0 +1,77 @@
+/*Clases css globales para la aplicación que he necesitado crear para puntuales usos*/
+
+.loginDiv {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    float: none;
+    margin: auto;
+}
+
+.userDiv {
+    padding: 10px;
+    float: right;
+}
+
+.sectionDiv {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    float: none;
+    margin: auto;
+}
+
+.logoCabecera {
+    width: 50px;
+    height: 50px;
+}
+
+.colorFooter {
+    background-color: #DFDFDF;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+}
+
+.colorNavbar {
+    background-color: #DFDFDF;
+}
+
+.fieldsett {
+    border: 1px solid #8ebafd;
+    background: #EAF2FF;
+    padding: 0 0.5em 1em 0.5em;
+    text-align: center;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.listadoGestionAnuncios3 {
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.bloque {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fieldsett2 {
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+    -moz-border-radius: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.imgmostrar {
+    width: 300px;
+    height: 300px;
+}

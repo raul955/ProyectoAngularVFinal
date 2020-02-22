@@ -1,0 +1,31 @@
+<!--Corresponde a la sección de gestión de usuarios, se trae la información del usuario de la bbdd e implementa la función de borrar usuario-->
+<div class="selectionDiv">
+    <h1>Usuarios</h1>
+    <br/><br/>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Email</th>
+                <th scope="col">Opciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr *ngFor="let user of users">
+                <td>
+                    {{ user.email }}
+                </td>
+                <td>
+                    <button class="btn btn-warning" (click)="db.removeUser(user.key)">
+                    BORRAR
+                </button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
